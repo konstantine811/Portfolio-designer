@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* body {
+  font-family: "Graphik LCG", sans-serif;
+  font-size: 50px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: #000000;
+  --blue: #007fef;
+  --blue-light: #8ac8ff;
+  --blue-light-2: #a6d5ff;
+  --white: #ffffff;
+  --h1: 48px;
+  --h2-lg: 40px;
+  --h2: 36px;
+  --h3: 32px;
+  --h5: 24px;
+  --h6: 20px;
+  --txt-md: 20px;
+  --txt-sm: 16px;
+  --space-section: 15px;
+  --arrow-lg: 48px;
+  --arrow-sm: 14px;
+}
+
+.container {
+  max-width: calc(1040px + var(--space-section) * 2);
+  padding: 0 var(--space-section);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.border-bottom {
+  height: 1px;
+  background-color: var(--black);
+  width: 100%;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  gap: 20px;
+  margin-bottom: 60px;
+  background-image: url("../assets/video/white-wave.mp4");
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.min-gap {
+  gap: var(--space-section);
+}
+/* partials */
+/* arrow */
+.arrow {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  display: inline-block;
+  position: relative;
+}
+
+.arrow-top {
+  transform: rotate(-90deg);
+}
+
+.arrow-black,
+.arrow-black::before,
+.arrow-black::after {
+  border-bottom-color: var(--black);
+}
+
+.arrow-white,
+.arrow-white::before,
+.arrow-white::after {
+  border-bottom-color: var(--white);
+}
+
+.arrow--skew-top {
+  transform: rotate(-45deg);
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  margin-top: 5px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  display: inline-block;
+  position: absolute;
+}
+
+.arrow::before {
+  transform: rotate(45deg);
+}
+
+.arrow::after {
+  transform: rotate(-45deg);
+}
+
+.arrow--lg {
+  width: var(--arrow-lg);
+}
+
+.arrow--lg::before,
+.arrow--lg::after {
+  right: -4px;
+  width: calc(var(--arrow-lg) / 2.2);
+}
+
+.arrow--lg::before {
+  top: -12px;
+}
+
+.arrow--lg::after {
+  bottom: -9px;
+}
+
+.arrow--sm {
+  width: var(--arrow-sm);
+}
+
+.arrow--sm::before,
+.arrow--sm::after {
+  right: 0;
+  width: calc(var(--arrow-sm) / 2);
+}
+
+.arrow--sm::before {
+  top: -8px;
+}
+
+.arrow--sm::after {
+  bottom: -5px;
+}
+
+/* text styles */
+.decoration-none {
+  text-decoration: none;
+}
+.h1 {
+  font-size: var(--h1);
+}
+
+.h2 {
+  font-size: var(--h2);
+}
+
+.h3 {
+  font-size: var(--h3);
+}
+
+.h5 {
+  font-size: var(--h5);
+}
+
+.h6 {
+  font-size: var(--h6);
+}
+
+.txt-md {
+  font-size: var(--txt-md);
+}
+
+.txt-sm {
+  font-size: var(--txt-sm);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
+}
+.normal {
+  font-weight: 400;
+}
+
+.txt-black {
+  color: var(--black);
+}
+
+.txt-white {
+  color: var(--white);
+}
+
+.txt-blue {
+  color: var(--blue);
+}
+
+.txt-normal {
+  font-style: normal;
+}
+
+/* buttons */
+.btn {
+  padding: 16px 32px;
+  background-color: var(--black);
+  border-radius: 60px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: var(--txt-md);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn:hover .arrow-white,
+.btn:hover .arrow-white::after,
+.btn:hover .arrow-white::before {
+  border-bottom-color: var(--black);
+}
+/* header */
+
+.header {
+  padding-top: 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav {
+  gap: 80px;
+}
+
+.nav-link:hover {
+  color: var(--blue);
+}
+
+/* main section */
+.main {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+.main-title-1 {
+  padding-bottom: 20px;
+}
+
+.main-title-2 {
+  padding-bottom: 40px;
+}
+
+.mobile-frame {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid var(--black);
+  min-height: 500px;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+/*  section-project-header */
+.link-section {
+  text-decoration: none;
+  display: block;
+}
+
+.section-project {
+  margin-bottom: 60px;
+}
+
+.section-project-last {
+  margin-bottom: 200px;
+}
+
+.section-project-header {
+  padding-bottom: 40px;
+}
+
+.section-project-img-wrap {
+  padding-bottom: 60px;
+}
+
+.section-about-me {
+  padding-bottom: 200px;
+}
+
+.section-about-me-content {
+  max-width: 508px;
+}
+
+.section-about-me-space-content {
+  margin-bottom: 40px;
+}
+
+.section-about-me-img-wrap {
+  margin-top: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.section-about-me-img-wrap:hover::after,
+.section-about-me-img-wrap:hover::before {
+  bottom: 7px;
+  left: 0;
+  opacity: 0;
+}
+
+.section-about-img {
+  max-width: 333px;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.section-about-me-img-wrap::after,
+.section-about-me-img-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 7px);
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.section-about-me-img-wrap::before {
+  bottom: 33.75px;
+  left: 28.5px;
+  background-color: var(--blue-light);
+  z-index: 1;
+}
+
+.section-about-me-img-wrap::after {
+  bottom: 60px;
+  left: 68px;
+  background-color: var(--blue-light-2);
+}
+
+/* resume section */
+.section-resume {
+  padding-bottom: 75px;
+}
+.section-resume-header {
+  margin-bottom: 65px;
+}
+.section-resume-table {
+  padding-bottom: 75px;
+}
+
+.section-resume-table-data {
+  max-width: 775px;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 8px 0 48px;
+}
+
+.section-resume-table-data-left {
+  max-width: 506px;
+  width: 100%;
+}
+
+.section-resume-table-data-txt {
+  padding-bottom: 12px;
+}
+
+.footer {
+  background-color: var(--black);
+  padding: 80px 0;
+}
+
+.footer-title {
+  padding-bottom: 24px;
+}
+
+.footer-sub-title {
+  padding-bottom: 40px;
+}
