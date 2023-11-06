@@ -1,0 +1,52 @@
+.fl-main-title {
+  width: 20%;
+  position: relative;
+  font-size: 81px;
+}
+
+.fl-img-wrap {
+  width: 80%;
+}
+
+.fl-page-wrap {
+  padding: 80px 0 0;
+}
+
+.float-img {
+  float: left;
+  width: 51%;
+  /*  shape-outside: circle(29.03% at 262px 265px); */
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.box-wrap {
+  border: 3px solid red;
+}
+
+.box-wrap {
+  overflow: hidden;
+}
+
+.box {
+  border: 1px solid white;
+  color: white;
+  padding: 37px 46.44px;
+}
+
+.box:nth-child(1),
+.box:nth-child(2) {
+  float: left;
+}
+
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5) {
+  float: right;
+}
