@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/fonts.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container flex items-center justify-content-between">
+      <div
+        class="container flex items-center justify-content-between flex-wrap"
+      >
         <a href="#" class="nav-link">
           <h5 class="h5 bold txt-black">Designer</h5>
         </a>
-        <nav class="nav flex items-center">
+        <nav class="nav flex items-center flex-wrap">
           <a href="#project" class="nav-link txt-md txt-black">Work</a>
           <a href="#about-me" class="nav-link txt-md txt-black">About</a>
           <a href="#resume" class="nav-link txt-md txt-black">Resume</a>
@@ -22,6 +24,9 @@
           >
           <a href="./pages/float-test.html" class="nav-link txt-md txt-black"
             >Float</a
+          >
+          <a href="./pages/media.html" class="nav-link txt-md txt-black"
+            >Media practic</a
           >
         </nav>
       </div>
@@ -35,9 +40,9 @@
           src="./assets/video/white-wave.mp4"
         ></video>
         <div
-          class="main-content container flex min-gap justify-content-between"
+          class="main-content container flex min-gap justify-content-between flex-wrap"
         >
-          <div>
+          <div class="main-content-text">
             <h1 class="h1 txt-black normal main-title-1">
               Hi, I'm John Doe. <br />
               <span class="txt-blue">UX Designer</span> based in Delhi, India
@@ -74,7 +79,11 @@
         </div>
         <div class="section-project-img-wrap">
           <div class="container">
-            <img src="./assets/images/netflix.png" alt="" />
+            <img
+              class="img-responsive"
+              src="./assets/images/netflix.png"
+              alt=""
+            />
           </div>
         </div>
         <div class="container">
@@ -96,7 +105,11 @@
         </div>
         <div class="section-project-img-wrap">
           <div class="container">
-            <img src="./assets/images/spotify.png" alt="" />
+            <img
+              class="img-responsive"
+              src="./assets/images/spotify.png"
+              alt=""
+            />
           </div>
         </div>
         <div class="container">
@@ -118,14 +131,20 @@
         </div>
         <div class="section-project-img-wrap">
           <div class="container">
-            <img src="./assets/images/facebook.png" alt="" />
+            <img
+              class="img-responsive"
+              src="./assets/images/facebook.png"
+              alt=""
+            />
           </div>
         </div>
       </a>
     </section>
 
     <section id="about-me" class="section-about-me">
-      <div class="container flex justify-content-between items-center">
+      <div
+        class="container flex justify-content-between items-center flex-wrap"
+      >
         <div class="section-about-me-content">
           <h3 class="h3 txt-black medium section-about-me-space-content">
             Hi, I'm John Doe. <span class="txt-blue">UX Designer</span> based in
@@ -147,7 +166,7 @@
         </div>
         <div class="section-about-me-img-wrap">
           <img
-            class="section-about-img"
+            class="img-responsive section-about-img"
             src="./assets/images/john_doe.png"
             alt=""
           />

@@ -1,0 +1,58 @@
+@use "sass:math";
+$grid-col-count: 12;
+$grid-col-size: math.div(100%, 12);
+$space-row: 15px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -#{$space-row} -#{$space-row} 0;
+}
+
+.content {
+  background-color: green;
+  min-height: 200px;
+}
+
+.col {
+  flex: 1 0 auto;
+  padding: $space-row $space-row 0;
+}
+
+@for $i from 1 through $grid-col-count {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: $grid-col-size * $i;
+    padding: $space-row $space-row 0;
+  }
+}
+
+@media screen and (min-width: $sm) {
+  @for $i from 1 through $grid-col-count {
+    .col-sm-#{$i} {
+      flex: 0 0 auto;
+      width: $grid-col-size * $i;
+      padding: $space-row $space-row 0;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  @for $i from 1 through $grid-col-count {
+    .col-md-#{$i} {
+      flex: 0 0 auto;
+      width: $grid-col-size * $i;
+      padding: $space-row $space-row 0;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  @for $i from 1 through $grid-col-count {
+    .col-lg-#{$i} {
+      flex: 0 0 auto;
+      width: $grid-col-size * $i;
+      padding: $space-row $space-row 0;
+    }
+  }
+}
